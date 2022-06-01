@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+    <title>vehicle details</title>
+</head>
+ 
+<body>
+    <form action="insert_vehicledetail.php" method="post">
+        <fieldset>
+            <legend>Customer Details</legend>
+            <br />
+ 
+            <label> Customer Name : </label><br />
+            <input type="text" id="name" name="name" /><br /><br />
+            <label> Phone Number : </label><br />
+            <input type="phone" id="phone" name="phone" /><br /><br />
+            <label> Email : </label><br />
+            <input type="email" id="email" name="email" /><br /><br />
+            <label> Customer Name : </label><br />
+            <input type="text" id="cname" name="cname" /><br /><br />
+            <label> Pick up Address : </label><br />
+            <textarea name="address" id="address" cols="30" rows="5"></textarea><br /><br />
+        </fieldset>
+        <fieldset>
+            <legend>Vehicle Details</legend>
+ 
+            <label> vehicle type : </label><br />
+ 
+            <select name="type" id="type">
+                <option value="car">car</option>
+                <option value="bus">bus</option>
+                <option value="bike">bike</option>
+            </select><br /><br />
+ 
+            <label>Air Condition : </label><br />
+ 
+            <input type="radio" name="condtiion" value="ac" id="ac" />
+            <label>With AC</label>
+ 
+            <input type="radio" name="condtiion" value="non-ac" id="ac" />
+            <label>Without AC </label><br />
+            <br /><br />
+ 
+            <label>Tour Staff :</label><br />
+            <input type="radio" name="staff" value="yes" id="staff" />
+            <label>yes </label>
+            <input type="radio" name="staff" value="no" id="staff" />
+            <label>No</label><br />
+            <br />
+        </fieldset>
+        <fieldset>
+            <legend>Date Details</legend>
+            <label>Satrt Date : </label>
+            <input type="date" name="sdate" id="sdate" /><br /><br />
+ 
+            <label>End Date : </label>
+            <input type="date" name="edate" id="edate" /><br /><br />
+ 
+            <button type="submit" id="submit" name='submit'>Submit</button>
+        </fieldset>
+    </form>
+</body>
+ 
+</html>
